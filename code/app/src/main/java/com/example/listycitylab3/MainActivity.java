@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
             new AddCityFragment().show(getSupportFragmentManager(), "Add City");
         });
 
-        // Edit existing city on click
+
         cityList.setOnItemClickListener((parent, view, position, id) -> {
             City choose_city = dataList.get(position);
             Edit_City edit_list = Edit_City.newInstance(choose_city, position);
